@@ -255,6 +255,7 @@ char *fix_at_file(char *in)
     fprintf(stderr, "RC is: %d Filename is: %s\n", rc, name);
     exit(-1);
   }
+  fprintf(stdout, "Filename is: %s\n", name);
 
   atout = fopen(name, "w");
   if (atout == NULL) {
